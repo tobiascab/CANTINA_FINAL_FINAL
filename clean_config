@@ -1,0 +1,6 @@
+[core]  
+	repositoryformatversion = 0  
+	filemode = false  
+	bare = false  
+	logallrefupdates = true  
+	sshCommand = ssh -i C:/Users/Administrator/.ssh/id_github -o StrictHostKeyChecking=no  
