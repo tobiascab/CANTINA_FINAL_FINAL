@@ -1,0 +1,35 @@
+{
+  "name": "cantina-coop-reducto",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "db:export": "node server/export_db.js",
+    "db:backup": "C:\\xampp\\mysql\\bin\\mysqldump.exe --user=root --port=3307 cantina_reducto > data/database_backup.sql",
+    "sync": "npm run db:export && npm run db:backup && git add . && git commit -m \"Sincronización completa de base de datos y platos\" && git push"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "html2pdf.js": "^0.14.0",
+    "jspdf": "^4.1.0",
+    "jspdf-autotable": "^5.0.7",
+    "mysql2": "^3.19.1",
+    "node-thermal-printer": "^4.6.0",
+    "react": "^19.2.4",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.2.4",
+    "xlsx": "^0.18.5",
+    "xlsx-js-style": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

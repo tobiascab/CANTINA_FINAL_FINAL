@@ -1,0 +1,5 @@
+{
+  "name": "Cantina Coop Reducto",
+  "description": "Un sistema de gestión de pedidos para la cantina Coop Reducto con interfaz minimalista verde pastel y generación de tickets.",
+  "requestFramePermissions": []
+}
